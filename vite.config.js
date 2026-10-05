@@ -23,4 +23,13 @@ export default defineConfig({
       '@': path.resolve('src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @use '@/styles/helpers' as *;
+        `,
+      },
+    },
+  },
 });
