@@ -1,0 +1,28 @@
+{
+  "name": "minista-project",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "minista",
+    "build": "minista build",
+    "preview": "minista preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@a1rth/css-normalize": "^1.2.4",
+    "classnames": "^2.5.1",
+    "imask": "^7.6.1",
+    "swiper": "^14.3.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.5.1",
+    "eslint": "^10.12.0",
+    "minista": "^4.0.12",
+    "postcss-pxtorem": "^6.1.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sass": "^1.105.1",
+    "vite": "^8.3.2"
+  }
+}
