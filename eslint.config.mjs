@@ -10,5 +10,6 @@ export default antfu({
   },
   rules: {
     'antfu/top-level-function': 'off',
+    'unused-imports/no-unused-vars': 'off',
   },
 });
