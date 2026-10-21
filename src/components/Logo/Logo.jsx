@@ -1,11 +1,17 @@
+import classNames from 'classnames';
+
 import './Logo.scss';
 
-const Logo = () => {
+const Logo = (props) => {
+  const {
+    className,
+    loading = 'lazy',
+  } = props;
   const title = 'Home';
 
   return (
     <a
-      className="logo"
+      className={classNames(className, 'logo')}
       href="/"
       title={title}
       aria-label={title}
@@ -16,7 +22,7 @@ const Logo = () => {
         className="logo__image"
         width={199}
         height={60}
-        loading="lazy"
+        loading={loading}
       />
     </a>
   );
