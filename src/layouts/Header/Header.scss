@@ -19,6 +19,10 @@
         }
     }
 
+    &.is-fixed {
+        position: fixed;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
