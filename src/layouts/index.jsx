@@ -16,7 +16,9 @@ export default function (props) {
     <>
       <Head
         htmlAttributes={{ lang: 'en' }}
-        title={title ? `Stream Vibe | ${title}` : 'Stream Vibe'}
+        title={title
+          ? `Stream Vibe | ${title}`
+          : 'Stream Vibe'}
       >
         <script src="/src/main.js" type="module" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

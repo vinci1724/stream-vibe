@@ -13,10 +13,14 @@
 // });
 
 import path from 'node:path';
-import { defineConfig, pluginSsg } from 'minista';
+import { defineConfig, pluginIsland, pluginSprite, pluginSsg } from 'minista';
 
 export default defineConfig({
-  plugins: [pluginSsg()],
+  plugins: [
+    pluginSsg(),
+    pluginIsland(),
+    pluginSprite(),
+  ],
 
   resolve: {
     alias: {

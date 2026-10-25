@@ -1,2 +1,3 @@
-// eslint-disable-next-line no-console
-console.log('Привет!');
+import OverlayMenu from './modules/OverlayMenu';
+
+new OverlayMenu();

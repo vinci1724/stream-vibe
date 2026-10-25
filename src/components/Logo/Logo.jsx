@@ -17,7 +17,7 @@ const Logo = (props) => {
       aria-label={title}
     >
       <img
-        src="/favicon-32x32.png"
+        src="/logo.svg"
         alt=""
         className="logo__image"
         width={199}
