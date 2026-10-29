@@ -1,4 +1,5 @@
 import Categories from '@/sections/Categories';
+import Devices from '@/sections/Devices';
 import Hero from '@/sections/Hero';
 
 export const metadata = {
@@ -6,11 +7,12 @@ export const metadata = {
   isHeaderFixed: true,
 };
 
-export default function () {
+export default function Home() {
   return (
     <>
       <Hero />
       <Categories />
+      <Devices />
     </>
   );
 }
