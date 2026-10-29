@@ -1,13 +1,22 @@
 {
   "format_on_save": "off",
+  "formatter": "none",
   // Use ESLint's --fix:
   "code_actions_on_format": {
     "source.fixAll.eslint": true
   },
-  "formatter": [],
   // Enable eslint for all supported languages
   // Defaults only include https://github.com/search?q=repo%3Azed-industries%2Fzed%20eslint_languages&type=code
   "languages": {
+    "JavaScript": {
+      "language_servers": ["...", "eslint"]
+    },
+    "TypeScript": {
+      "language_servers": ["...", "eslint"]
+    },
+    "TSX": {
+      "language_servers": ["...", "eslint"]
+    },
     "HTML": {
       "language_servers": ["...", "eslint"]
     },
@@ -28,13 +37,19 @@
     },
     "CSS": {
       "language_servers": ["...", "eslint"]
+    },
+    "SCSS": {
+      "language_servers": ["...", "eslint"]
     }
     // Add other languages as needed
   },
   "lsp": {
     "eslint": {
       "settings": {
-        "workingDirectories": ["./"],
+        // "workingDirectories": ["./"],
+        "workingDirectory": {
+          "mode": "auto"
+        },
 
         // Silent the stylistic rules in your IDE, but still auto fix them
         "rulesCustomizations": [
