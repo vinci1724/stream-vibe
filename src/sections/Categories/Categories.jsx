@@ -28,8 +28,8 @@ const Categories = () => {
       >
         {categoryItems.map((categoryItem, index) => (
           <CategoryCard
-            {...categoryItem}
             key={index}
+            {...categoryItem}
           />
         ))}
       </Slider>

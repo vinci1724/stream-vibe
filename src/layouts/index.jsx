@@ -5,7 +5,7 @@ import Footer from '@/layouts/Footer';
 import Header from '@/layouts/Header';
 import '@/styles';
 
-export default function (props) {
+export default function Layout(props) {
   const {
     children,
     title,

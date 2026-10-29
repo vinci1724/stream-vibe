@@ -1,55 +1,55 @@
 .button {
-    @include flex-center(true);
+  @include flex-center(true);
 
-    column-gap: 4px;
-    padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
-    font-weight: 600;
+  column-gap: 4px;
+  padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-red-45);
+  border: none;
+  border-radius: var(--border-radius-s);
+  user-select: none;
+  cursor: pointer;
+
+  @include laptop {
+    border-radius: var(--border-radius-xs);
+  }
+
+  @include hover {
     color: var(--color-white);
-    background-color: var(--color-red-45);
-    border: none;
-    border-radius: var(--border-radius-s);
-    user-select: none;
-    cursor: pointer;
+    background-color: var(--color-red-60);
+  }
 
-    @include laptop {
-        border-radius: var(--border-radius-xs);
-    }
+  &.active {
+    scale: 1.05;
+  }
 
-    @include hover {
-        color: var(--color-white);
-        background-color: var(--color-red-60);
-    }
+  &.disabled {
+    color: var(--color-gray-60);
+    background-color: var(--color-black-06);
+    pointer-events: none;
+  }
 
-    &.active {
-        scale: 1.05;
-    }
+  &:has(.button__icon:only-child) {
+    @include square(fluid-to-laptop(56, 44));
 
-    &.disabled {
-        color: var(--color-gray-60);
-        background-color: var(--color-black-06);
-        pointer-events: none;
-    }
+    padding: 0;
+  }
+
+  &--transparent {
+    background-color: transparent;
 
     &:has(.button__icon:only-child) {
-        @include square(fluid-to-laptop(56, 44));
+      @include square(44px);
 
-        padding: 0;
+      .button__icon {
+        --iconSize: #{fluid-to-laptop(34, 24)};
+      }
     }
+  }
 
-    &--transparent {
-        background-color: transparent;
-
-        &:has(.button__icon:only-child) {
-            @include square(44px);
-
-            .button__icon {
-                --iconSize: #{fluid-to-laptop(34, 24)};
-            }
-        }
-    }
-
-    &--black-10 {
-        background-color: var(--color-black-10);
-        border: var(--border);
-    }
+  &--black-10 {
+    background-color: var(--color-black-10);
+    border: var(--border);
+  }
 }
