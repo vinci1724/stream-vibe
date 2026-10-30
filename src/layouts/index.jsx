@@ -3,6 +3,7 @@ import { Head } from 'minista/head';
 import Content from '@/layouts/Content';
 import Footer from '@/layouts/Footer';
 import Header from '@/layouts/Header';
+import Banner from '@/sections/Banner';
 import '@/styles';
 
 export default function Layout(props) {
@@ -28,8 +29,9 @@ export default function Layout(props) {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Header url={url} isFixed={isHeaderFixed} />
-      <Content>
+      <Content isResetPaddingTop={isHeaderFixed}>
         {children}
+        <Banner />
       </Content>
       <Footer />
     </>

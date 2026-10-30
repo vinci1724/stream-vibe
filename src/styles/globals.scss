@@ -107,7 +107,7 @@ a {
 
 // временно скрывает все секции, кроме последней
 .header,
-.content > *:not(:last-child),
+.content > *:not(:nth-last-child(2)),
 .footer {
   display: none !important;
 }
