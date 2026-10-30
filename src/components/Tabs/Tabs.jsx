@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
-import getIdFromTitle from '@/utils/getIdFromTitle';
+import TabsNavigation from './components/TabsNavigation';
+import getTabsElementsFromTitle from './utils/getTabsElementsFromTitle';
 import './Tabs.scss';
 
 const Tabs = (props) => {
@@ -11,9 +12,7 @@ const Tabs = (props) => {
     navigationTargetElementId = null,
   } = props;
 
-  const titleFormatted = getIdFromTitle(title);
-  const buttonId = `${titleFormatted}-tab`;
-  const contentId = `${titleFormatted}-tabpanel`;
+  const { buttonId, contentId } = getTabsElementsFromTitle(title);
 
   return (
     <div
@@ -23,13 +22,13 @@ const Tabs = (props) => {
       })}
     >
       {!navigationTargetElementId && (
-        <div>НАВИГАЦИЯ ТАБОВ</div>
+        <TabsNavigation title={title} items={items} />
       )}
 
       <div className="tabs__body">
         {items.map((item, index) => {
           const {
-            title,
+            // title,
             children,
             isActive,
           } = item;
