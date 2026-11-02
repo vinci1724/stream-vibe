@@ -1,4 +1,5 @@
 import CategoryCard from '@/components/CategoryCard';
+import MovieCard from '@/components/MovieCard';
 import Slider from '@/components/Slider';
 import SliderNavigation from '@/components/Slider/components/SliderNavigation';
 import Tabs from '@/components/Tabs';
@@ -26,6 +27,7 @@ const Collections = () => {
               const {
                 title,
                 categoryItems,
+                movieItems,
                 sliderParams,
               } = collectionItem;
 
@@ -53,10 +55,15 @@ const Collections = () => {
                     isBeyondTheViewportOnMobileS
                   >
                     {/* {categoryItems?.map((categoryItem, index) => ( */}
-                    {(categoryItems ?? []).map((categoryItem, i) => (
+                    {categoryItems?.map((categoryItem, i) => (
                       <CategoryCard
                         key={index}
                         {...categoryItem}
+                      />
+                    )) ?? movieItems?.map((movieItem, index) => (
+                      <MovieCard
+                        key={index}
+                        {...movieItem}
                       />
                     ))}
                   </Slider>

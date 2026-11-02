@@ -8,11 +8,13 @@ const Icon = (props) => {
     className,
     name,
     hasFill = false,
+    ariaLabel,
   } = props;
 
   return (
     <span
       className={classNames(className, 'icon')}
+      aria-label={ariaLabel}
     >
       <Sprite
         src={`/src/assets/icons/${name}.svg`}
