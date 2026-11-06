@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-
 import './BurgerButton.scss';
 
 const BurgerButton = (props) => {

@@ -1,6 +1,5 @@
 import { Image } from 'minista/assets';
-
-import Button from '../Button';
+import Button from '@/components/Button';
 import './MovieBannerCard.scss';
 
 const MovieBannerCard = (props) => {
@@ -16,25 +15,21 @@ const MovieBannerCard = (props) => {
         className="movie-banner-card__image"
         src={imgSrc}
       />
-
       <div className="movie-banner-card__inner">
         <div className="movie-banner-card__body">
           <h2 className="movie-banner-card__title h3">
             {title}
           </h2>
-
           <div className="movie-banner-card__description hidden-mobile">
-            {description}
+            <p>{description}</p>
           </div>
         </div>
-
-        <div className="movie-banner-card__footer">
+        <footer className="movie-banner-card__footer">
           <Button
             className="movie-banner-card__play-button"
             iconName="play"
             label="Play Now"
           />
-
           <div className="movie-banner-card__actions">
             <Button
               mode="black-06"
@@ -55,7 +50,7 @@ const MovieBannerCard = (props) => {
               isLabelHidden
             />
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   );

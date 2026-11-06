@@ -1,6 +1,6 @@
 import getIdFromTitle from '@/utils/getIdFromTitle';
 
-const getTabsElementsFromTitle = (title) => {
+const getTabsElementsIdsFromTitle = (title) => {
   const titleFormatted = getIdFromTitle(title);
 
   return {
@@ -9,4 +9,4 @@ const getTabsElementsFromTitle = (title) => {
   };
 };
 
-export default getTabsElementsFromTitle;
+export default getTabsElementsIdsFromTitle;

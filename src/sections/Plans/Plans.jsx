@@ -11,7 +11,7 @@ const Plans = () => {
 
   return (
     <Section
-      title="Choose the plat that`s right for you"
+      title="Choose the plan that's right for you"
       titleId="plans-id"
       description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, animi doloremque asperiores quidem nihil, totam cum culpa repellat provident eveniet veniam esse nesciunt eius corrupti dolor saepe sunt ipsum officia!"
       actions={(

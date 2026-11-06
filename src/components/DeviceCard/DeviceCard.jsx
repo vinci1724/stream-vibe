@@ -17,12 +17,11 @@ const DeviceCard = (props) => {
             width={40}
             height={40}
             alt=""
-            loadin="lazy"
+            loading="lazy"
           />
         </div>
         <h3 className="device-card__title h4">{title}</h3>
       </header>
-
       <div className="device-card__description">
         <p>{description}</p>
       </div>

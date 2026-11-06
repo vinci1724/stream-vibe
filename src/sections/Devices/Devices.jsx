@@ -30,7 +30,7 @@ const Devices = () => {
       imgSrc: '/devices/5.svg',
     },
     {
-      title: 'Smartphones',
+      title: 'VR Headsets',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, animi magnam. Modi eveniet ut, quas laudantium repellendus doloremque tenetur, veniam odio tempore sapiente ipsam accusamus. Officia provident blanditiis nihil illum!',
       imgSrc: '/devices/6.svg',
     },
@@ -38,7 +38,7 @@ const Devices = () => {
 
   return (
     <Section
-      title="We Provide ypu  streaming experience across..."
+      title="We Provide you streaming experience across various devices."
       titleId="devices-title"
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus necessitatibus possimus, odio doloremque iure iste. Provident quas, quam sequi blanditiis non quaerat illo, numquam, similique ut sed nam assumenda."
     >

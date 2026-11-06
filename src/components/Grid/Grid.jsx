@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-
 import './Grid.scss';
 
 const Grid = (props) => {

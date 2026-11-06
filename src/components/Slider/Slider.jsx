@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import SliderNavigation from './components/SliderNavigation';
-
 import 'swiper/css';
 import './Slider.scss';
 
@@ -40,10 +39,10 @@ const Slider = (props) => {
     children,
     navigationTargetElementId = null,
     sliderParams = defaultSliderParams,
-    isBeyondTheViewportOnMobileS = false,
+    isBeyondTheViewportOnMobileS,
     hasScrollbarOnMobile = true,
     /**
-     *  '' (default) | 'abs-bottom'
+     * '' (default) | 'abs-bottom'
      */
     navigationPosition = '',
     isNavigationHiddenMobile = true,
@@ -52,21 +51,15 @@ const Slider = (props) => {
   return (
     <div
       className={classNames('slider', {
-        'is-beyond-the-viewport-on-mobile-s': isBeyondTheViewportOnMobileS,
+        'slider--beyond-the-viewport-on-mobile-s': isBeyondTheViewportOnMobileS,
       })}
       data-js-slider={JSON.stringify({
         sliderParams,
         navigationTargetElementId,
       })}
     >
-      {/* Slider main container */}
-      <div
-        className="slider__swiper swiper"
-        data-js-slider-swiper=""
-      >
-        {/* Additional required wrapper */}
+      <div className="slider__swiper swiper" data-js-slider-swiper="">
         <ul className="slider__list swiper-wrapper">
-          {/* Slides */}
           {children.map((slide, index) => (
             <li className="slider__item swiper-slide" key={index}>
               {slide}

@@ -1,4 +1,4 @@
-import Button from '../Button';
+import Button from '@/components/Button';
 import './PlanCard.scss';
 
 const PlanCard = (props) => {
@@ -16,17 +16,15 @@ const PlanCard = (props) => {
           <p>{description}</p>
         </div>
       </div>
-
       <div className="plan-card__conditions">
         <span className="plan-card__price">{price.value}</span>
         <span className="plan-card__period">{price.label}</span>
       </div>
-
       <div className="plan-card__actions">
         <Button
           label="Start Free Trial"
           href="/subscriptions"
-          mode="black08"
+          mode="black-08"
         />
         <Button
           label="Choose Plan"

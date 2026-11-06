@@ -93,9 +93,9 @@ const Footer = () => {
         <div className="footer__extra">
           <p className="footer__copyright">
             @
-            <time dateTime="2026">2026</time>
+            <time dateTime="2023">2023</time>
             {' '}
-            streamvibe, All Rights Reserved
+            streamvib, All Rights Reserved
           </p>
 
           <div className="footer__extra-links">

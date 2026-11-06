@@ -1,7 +1,6 @@
 import classNames from 'classnames';
-
+import getTabsElementsIdsFromTitle from '@/components/Tabs/utils/getTabsElementsIdsFromTitle';
 import getIdFromTitle from '@/utils/getIdFromTitle';
-import getTabsElementsFromTitle from '../../utils/getTabsElementsFromTitle';
 import './TabsNavigation.scss';
 
 const TabsNavigation = (props) => {
@@ -26,13 +25,11 @@ const TabsNavigation = (props) => {
       <h3 className="visually-hidden" id={titleId}>
         {title}
       </h3>
-
       {items.map((item, index) => {
-        const { buttonId, contentId } = getTabsElementsFromTitle(item.title);
+        const { buttonId, contentId } = getTabsElementsIdsFromTitle(item.title);
 
         return (
           <div
-            key={index}
             className={classNames('tabs-navigation__button', {
               'is-active': item.isActive,
             })}
@@ -44,6 +41,7 @@ const TabsNavigation = (props) => {
               ? 0
               : -1}
             data-js-tabs-button=""
+            key={index}
           >
             {item.title}
           </div>

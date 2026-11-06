@@ -1,6 +1,5 @@
 import classNames from 'classnames';
-
-import Button from '../Button';
+import Button from '@/components/Button';
 import './Socials.scss';
 
 const Socials = (props) => {

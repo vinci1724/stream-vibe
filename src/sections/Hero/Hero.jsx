@@ -17,7 +17,7 @@ const Hero = () => {
           >
             <img
               className="hero__play-button-image"
-              alt="/"
+              alt=""
               src="/play.svg"
               width={470}
               height={470}
@@ -31,7 +31,7 @@ const Hero = () => {
             The Best Streaming Experience
           </h1>
           <div className="hero__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque magnam dolorum similique voluptatem, nisi ratione dolor voluptatibus iure iste autem, repellat veniam, quos tempore laudantium? Atque in facere reprehenderit!
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque magnam dolorum similique voluptatem, nisi ratione dolor voluptatibus iure iste autem, repellat veniam, quos tempore laudantium? Atque in facere reprehenderit!</p>
           </div>
           <Button
             className="hero__button"

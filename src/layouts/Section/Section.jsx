@@ -25,7 +25,7 @@ const Section = (props) => {
           </h2>
 
           {description && (
-            <div className="section__decsription">
+            <div className="section__description">
               <p>{description}</p>
             </div>
           )}

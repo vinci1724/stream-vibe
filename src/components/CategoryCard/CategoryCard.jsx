@@ -1,7 +1,6 @@
 import { Image } from 'minista/assets';
-
-import Badge from '../Badge';
-import Icon from '../Icon';
+import Badge from '@/components/Badge';
+import Icon from '@/components/Icon';
 import './CategoryCard.scss';
 
 const CategoryCard = (props) => {

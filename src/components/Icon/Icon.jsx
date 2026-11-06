@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { Sprite } from 'minista/assets';
-
 import './Icon.scss';
 
 const Icon = (props) => {

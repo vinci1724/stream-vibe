@@ -15,7 +15,7 @@
     }
   }
 
-  &__abs-bottom {
+  &--abs-bottom {
     position: absolute;
     z-index: 1;
     inset-inline: fluid-to-laptop(50, 40);

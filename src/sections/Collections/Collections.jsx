@@ -54,10 +54,9 @@ const Collections = () => {
                     navigationTargetElementId={sliderNavigationId}
                     isBeyondTheViewportOnMobileS
                   >
-                    {/* {categoryItems?.map((categoryItem, index) => ( */}
                     {categoryItems?.map((categoryItem, i) => (
                       <CategoryCard
-                        key={index}
+                        key={i}
                         {...categoryItem}
                       />
                     )) ?? movieItems?.map((movieItem, index) => (

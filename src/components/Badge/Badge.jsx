@@ -1,6 +1,5 @@
 import classNames from 'classnames';
-
-import Icon from '../Icon';
+import Icon from '@/components/Icon';
 import './Badge.scss';
 
 const Badge = (props) => {
@@ -32,7 +31,7 @@ const Badge = (props) => {
           ariaLabel={iconAriaLabel}
         />
       )}
-      {children}
+      <span>{children}</span>
     </div>
   );
 };

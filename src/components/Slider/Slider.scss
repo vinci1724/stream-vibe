@@ -1,7 +1,7 @@
 .slider {
   position: relative;
 
-  &--is-beyond-the-viewport-on-mobile-s {
+  &--beyond-the-viewport-on-mobile-s {
     @include mobile-s {
       width: calc(100vw - var(--container-padding-x));
     }

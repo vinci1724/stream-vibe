@@ -29,10 +29,10 @@ class Tabs extends BaseComponent {
       ? document.getElementById(this.params.navigationTargetElementId)
       : this.rootElement.querySelector(this.selectors.navigation);
     this.buttonElements = [
-      ...this.navigationElement.querySelectorAll(this.this.selectors.button),
+      ...this.navigationElement.querySelectorAll(this.selectors.button),
     ];
     this.contentElements = [
-      ...this.rootElement.querySelectorAll(this.this.selectors.button),
+      ...this.rootElement.querySelectorAll(this.selectors.content),
     ];
     this.state = this.getProxyState({
       activeTabIndex: this.buttonElements.findIndex(({ ariaSelected }) => ariaSelected),
@@ -175,7 +175,7 @@ class TabsCollection {
   }
 
   init() {
-    document.querySelector(rootSelector).forEach((element) => {
+    document.querySelectorAll(rootSelector).forEach((element) => {
       new Tabs(element);
     });
   }
